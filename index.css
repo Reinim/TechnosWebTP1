@@ -1,0 +1,77 @@
+body {
+  font: 20px Arial;
+  text-align: center;
+  margin-top: 2em;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.Animation {
+  animation: 15s linear infinite alternate slidein ;
+    color: orangered
+}
+.Animation2 {
+  animation: 15s linear infinite alternate slidein2 ;
+    color: cadetblue
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 200%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 0%;    
+      transform: rotate(1440deg);
+      animation: bounce;
+       
+
+  }
+}
+@keyframes slidein2 {
+  from {
+    margin-left: 0%;
+    width: 0%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200%;    
+      transform: rotate(-1440deg);
+      animation: bounce;
+       
+
+  }
+}
+
+.ulMenu {
+    list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+.liMenu a{
+    float: left;
+    display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    background-color: #ddd;
+}
+
+.liMenu a.active {
+  color: white;
+  background-color: skyblue;
+}
+
+
+
