@@ -1,7 +1,6 @@
 body {
   font: 20px Arial;
   text-align: center;
-  margin-top: 2em;
 }
 
 @keyframes bounce {
@@ -46,8 +45,6 @@ body {
     width: 200%;    
       transform: rotate(-1440deg);
       animation: bounce;
-       
-
   }
 }
 
@@ -73,15 +70,44 @@ body {
   background-color: skyblue;
 }
 
-
-
-
-
-
-
-
-
-
 .contact {
     margin: 0px auto;
 }
+
+.projet {
+   
+    border-width:1px;
+ border-style:dotted;
+ border-color:black;
+}
+
+.droite {
+    float: right
+}
+
+
+
+.centre {
+     background-color:skyblue;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+@keyframes changerCouleurs {
+    from, to { color: rebeccapurple}
+    10%      { color: red}
+    20%      { color: darkred}
+    30%      { color: black}
+    40%      { color: darkgreen}
+    50%      { color: green}
+    60%      { color: forestgreen}
+    70%      { color: greenyellow}
+    80%      { color: yellowgreen}
+    90%      { color: white}
+}
+
+.Animation3 {
+    color: hsl(324, 70%, 45%);
+    animation: changerCouleurs 10s infinite;
+}
+
+
