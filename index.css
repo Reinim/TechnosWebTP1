@@ -54,6 +54,7 @@ body {
   overflow: hidden;
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
+
 }
 
 .liMenu a{
@@ -106,11 +107,36 @@ body {
 }
 
 .Animation3 {
-    color: hsl(324, 70%, 45%);
+    
     animation: changerCouleurs 10s infinite;
 }
 
+.Animation4 {
+  animation: Augmenter 1s 5 alternate;
+}
 
+.Animation5 {
+  animation: Disparaitre 1s infinite alternate;
+}
+
+@keyframes Augmenter{
+   0% 
+    {
+    font-size: 20px;
+    }
+    100%
+    {
+    font-size: 75px;
+    }
+}
+@keyframes Disparaitre{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
 
 .gauche {
     float: left;
