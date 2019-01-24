@@ -82,7 +82,7 @@ body {
 }
 
 .droite {
-    float: right
+    float: left;
 }
 
 
@@ -111,3 +111,14 @@ body {
 }
 
 
+
+.gauche {
+    float: left;
+    background-color: azure;
+}
+
+.center {
+    float: left;
+   
+    background-color: aliceblue;
+}
